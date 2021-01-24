@@ -14,7 +14,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # Data is located at:
 # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-dataset_path = 'https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
+dataset_path = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
 ds = TabularDatasetFactory.from_delimited_files(dataset_path)
 
@@ -48,7 +48,7 @@ def clean_data(data):
     return x_df, y_df
 
 #Split data into train and test sets
-x, y = clean_data(trainds)
+x, y = clean_data(fds)
 x_train, x_test, y_train, y_test = train_test_split(x, y)
     
 
@@ -68,6 +68,9 @@ def main():
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
+    
+    os.makedirs("outputs", exist_ok=True)
+    joblib.dump(value=model,filename="./outputs/model.joblib")
 
 if __name__ == '__main__':
     main()
