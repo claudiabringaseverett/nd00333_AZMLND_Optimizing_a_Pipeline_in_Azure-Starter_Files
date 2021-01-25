@@ -48,7 +48,7 @@ def clean_data(data):
     return x_df, y_df
 
 #Split data into train and test sets
-x, y = clean_data(fds)
+x, y = clean_data(ds)
 x_train, x_test, y_train, y_test = train_test_split(x, y)
     
 
@@ -69,8 +69,9 @@ def main():
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
     
-    os.makedirs("outputs", exist_ok=True)
-    joblib.dump(value=model,filename="./outputs/model.joblib")
+    os.makedirs('outputs', exist_ok=True)
+    joblib.dump(model,filename="outputs/model.joblib")
+    run.log("Accuracy", np.float(accuracy))
 
 if __name__ == '__main__':
     main()
