@@ -27,7 +27,10 @@ In the hyperdrive, we obtained an accuracy of 91.59% compared to autoML voting e
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
+I think concepts in Machine learning like feature engineering could be a integrated with this experiment for better data optimization. Also, we are using a classification technique but we can try to experiment others like AUC.
+
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
+
