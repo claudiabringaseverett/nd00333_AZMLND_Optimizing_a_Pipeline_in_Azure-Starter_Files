@@ -35,8 +35,13 @@ The autoML was configured as follow:
 AutoML runs our training model and provides the best possible model out of all of them. In this case, voting ensemble provided an accuracy of 91.71% in the 30 minutes run. The voting ensemble model is a model that generates an output by combining predictions of other models and resulting an accurate prediction.This model predicts the output based on small models, the number of cross validation for this case is 4. We also selected inside the automl_config, the type of algorithm used which classification, training data, primary metric, compute target, label column which is what we are trying to predict. 
 
 Parameters generated for Voting Ensemble model by autoML:
-
-
+```
+reg_lambda=0.6842105263157894
+silent=True,
+subsample=1,
+subsample_for_bin=200000,
+subsample_freq=0,
+verbose=-10
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
