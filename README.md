@@ -6,14 +6,13 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The bank marketing's dataset contains 21 columns and 3300 rows. The data contains information on how many times a client was contacted during the campaign, job, loan, housing, and contact history on whether the client opted for a fixed loan rate deposit. The best performing model was VotingEnsemble with the accuracy of 0.9172 using AutoML. 
 
 ## Scikit-learn Pipeline
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+First, we created a worskpace and curated environment to initialize the compute cluster. Then, the dataset is tabular so it was imported using an URL in the train.py script and the data was split into training and test datasets. Next, the logistic regresion was the algorithm used to obtain the best run and it was used for training of the hyperparameter tunning C and max_iter. The banditPolicy was used for early termintion of the hyperdrive run so once it is done running, it save the respurced needed for evaluation. Once the best model was determined based on the hyperparameter, the model was saved.
 
 **What are the benefits of the parameter sampler you chose?**
+I utilized the 
 
 **What are the benefits of the early stopping policy you chose?**
 
