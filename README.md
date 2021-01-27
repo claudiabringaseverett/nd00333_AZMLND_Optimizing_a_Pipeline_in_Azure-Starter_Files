@@ -42,7 +42,7 @@ subsample=1,
 subsample_for_bin=200000,
 subsample_freq=0,
 verbose=-10
-
+```
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 In the hyperdrive, we obtained an accuracy of 91.59% compared to autoML voting ensemble which is 91.71%. The autoMl took about 30 minutes to run 23 models whereas hyperdrive model was around 10 minutes to run 10. AutoMl provided the option of running multiple models to selected the best one but it depends the type of dataset you are trying to run when it comes to select the best option. For this case, autoML provided a more in depth analysis in selected the best option.
