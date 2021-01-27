@@ -34,3 +34,4 @@ I think concepts in Machine learning like feature engineering could be a integra
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
 
+![Alt deletecompute](deleteinstancecompute.png)
