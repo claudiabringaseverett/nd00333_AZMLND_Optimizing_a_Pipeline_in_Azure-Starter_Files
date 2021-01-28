@@ -49,7 +49,7 @@ In the hyperdrive, we obtained an accuracy of 91.59% compared to autoML voting e
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
-We could use find some ways to handle imabalanced data. We can use Re-sampling technique: this strategy we focus on balancing the classes in the training data before providing the data as input to the machine learning algorithm.
+We can use Re-sampling technique: this strategy we focus on balancing the classes in the training data before providing the data as input to the machine learning algorithm.
 Over Sampling-> it increases the number of instances in the minority class by randomly replicating them in order to present a higher representation of the minority class in the sample. We can also use AUC_weighted which is more fit for imbalanced data instead of Accuracy.
 The AUC is an estimate of the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative instance. We can also use AUC_weighted which is more fit for imbalanced data instead of Accuracy.
 
