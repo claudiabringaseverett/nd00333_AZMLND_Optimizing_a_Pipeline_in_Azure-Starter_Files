@@ -10,8 +10,8 @@ The bank marketing's dataset contains 21 columns and 3300 rows. The data contain
 
 ## Scikit-learn Pipeline
 First, we created a worskpace and curated environment to initialize the compute cluster. Then, the dataset is tabular so it was imported using an URL in the train.py script and the data was split into training and test datasets. Next, the logistic regresion was the algorithm used to obtain the best run and it was used for training of the hyperparameter tunning C and max_iter. The C is the regularization while max_iter is the max number of iterations. 
-In this example, the randomParameter sampling was used because it runs faster and it supports the early termination and low performance runs. Grid Parameter sampling could have been a good alternative as well, however, this could become time consuming if budget was not an issue for us. 
-The banditPolicy was used for early termintion of the hyperdrive run so once it is done running, it save the respurced needed for evaluation. Once the best model was determined based on the hyperparameter, the model was saved.
+In this example, the randomParameter sampling was used because it runs faster and it supports the early termination and low performance runs. Grid Parameter sampling could have been a good alternative as well, however, this could have become time consuming if budget was not an issue.
+The banditPolicy was used for early termintion of the hyperdrive run so once itdone running, it saved the resource needed for evaluation. Once the best model was determined based on the hyperparameter,then it was displayed and saved.
 
 **What are the benefits of the parameter sampler you chose?**
 I utilized the random sampling because each sample has a change of being selected, in this case, it runs through all the different samples and selects the best one. Random Search sets up a grid of hyperparameter values and selects random combinations to train the model and score. This allows you to explicitly control the number of parameter combinations that are attempted.
